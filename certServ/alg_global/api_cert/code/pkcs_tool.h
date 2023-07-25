@@ -1,12 +1,6 @@
 #pragma once
 
-class pkcs_tool
-{
-public:
-    pkcs_tool() {}
-    ~pkcs_tool() {}
-
-private:
-
-};
+int p12FileParse(const char *file, const char *password, unsigned char *derCert,
+                 unsigned int *derCertLen, unsigned char *derPkey,
+                 unsigned int *derPkeyLen);
 

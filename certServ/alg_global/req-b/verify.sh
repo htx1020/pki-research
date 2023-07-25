@@ -9,7 +9,7 @@ caPATH=../ca
 
 openssl x509 -in $cer -text
 openssl verify \
-	-CAfile $caPATH/demoCA/ca/ca.pem \
+	-CAfile $caPATH/demoCA/cacert.pem \
 	-verbose -purpose sslclient $runPATH/$cer
 
 echo "--------------------------------------"
